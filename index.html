@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed Ghana Poultry Farm</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff8f0; color: #333; }
+    header { background: #f4a261; padding: 20px; text-align: center; font-size: 32px; font-weight: bold; color: white; }
+    nav { display: flex; justify-content: center; background: #e76f51; }
+    nav a { color: white; padding: 14px 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { background: #d65a3a; }
+    .hero { background: url('https://images.unsplash.com/photo-1617196037020-b97f5b497c9d?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat; height: 350px; display: flex; justify-content: center; align-items: center; color: white; text-shadow: 2px 2px 6px black; font-size: 40px; font-weight: bold; }
+    section { padding: 40px; max-width: 1000px; margin: auto; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+    .card img { width: 100%; border-radius: 10px; height: 180px; object-fit: cover; }
+    .price { background: #f4a261; padding: 10px; border-radius: 6px; font-weight: bold; color: white; margin-top: 10px; }
+    footer { background: #e76f51; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    form input, form textarea { width: 100%; padding: 12px; margin-top: 12px; border: 1px solid #bbb; border-radius: 6px; }
+    form button { margin-top: 15px; background: #e76f51; color: white; padding: 12px; width: 100%; border: none; border-radius: 6px; font-size: 18px; cursor: pointer; }
+    form button:hover { background: #d65a3a; }
+    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); text-decoration: none; font-size: 30px; }
+    .how-to { background: #f0e5d8; padding: 20px; border-radius: 6px; margin-top: 20px; }
+    .map-container { height: 350px; width: 100%; border-radius: 10px; overflow: hidden; margin-top: 20px; }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N5G0WQD6H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1N5G0WQD6H');
+  </script>
+</head>
+<body>
+  <header>
+    <img src="https://img.icons8.com/emoji/48/000000/chicken-emoji.png" alt="Logo" style="vertical-align: middle;">
+    Feed Ghana Poultry Farm
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Egg Prices</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    Fresh • Healthy • Farm Eggs
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Feed Ghana Poultry Farm delivers the freshest eggs directly from our healthy poultry. 
+      Our birds are well‑fed and cared for, ensuring top‑quality eggs packed with nutrition. 
+      Delivery is every <b>two days</b>.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>Fresh Egg Prices</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600047506945-7d373b2e0e30?auto=format&fit=crop&w=600&q=60" alt="Small Eggs">
+        <h3>Small Eggs</h3>
+        <p class="price">¢31 per crate</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1572985684333-b845f437391d?auto=format&fit=crop&w=600&q=60" alt="Medium Eggs">
+        <h3>Medium Eggs</h3>
+        <p class="price">¢33 per crate</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1589927986089-3581237885d1?auto=format&fit=crop&w=600&q=60" alt="Large Eggs">
+        <h3>Large Eggs</h3>
+        <p class="price">¢35 per crate</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=600&q=60" alt="Jumbo Eggs">
+        <h3>Jumbo Eggs</h3>
+        <p class="price">¢38 per crate</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604754742621-c5c09ee1a0b2?auto=format&fit=crop&w=600&q=60" alt="Double York Eggs">
+        <h3>Double York</h3>
+        <p class="price">¢41 per crate</p>
+      </div>
+    </div>
+
+    <div class="how-to">
+      <h3>How to Order</h3>
+      <ol>
+        <li>Click the green WhatsApp button at the bottom right.</li>
+        <li>Send your order details via WhatsApp.</li>
+        <li>Existing customers pay on delivery; new customers pay before delivery.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Call or WhatsApp us at <b>0202873382</b> to place your order.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <textarea rows="5" placeholder="Message / Order Details" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="location">
+    <h2>Our Location</h2>
+    <div class="map-container">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.8485%2C9.2242%2C-0.8480%2C9.2247&amp;layer=mapnik&amp;marker=9.224453,-0.848083">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Feed Ghana Poultry Farm • All Rights Reserved
+  </footer>
+
+  <!-- WhatsApp Button with click tracking -->
+  <a class="whatsapp-button" href="https://wa.me/233202873382" target="_blank" title="Chat with us on WhatsApp"
+     onclick="gtag('event', 'click', {'event_category':'Order','event_label':'WhatsApp'});">
+    🟢
+  </a>
+
+</body>
+</html>
